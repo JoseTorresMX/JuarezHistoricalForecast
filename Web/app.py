@@ -1,10 +1,15 @@
-from flask import Flask,render_template
+from flask import Flask, render_template
 
-app =Flask(__name__)
+# Contruccion de la aplicacion
+app = Flask(__name__)
 
+# Rutas que tendra la aplicacion
 @app.route('/')
 def index():
     return render_template('index.html')
 
-if __name__=="__main__":
+
+# Un debuggeador para que, cada vez que se realice cambios
+# se actualize solo
+if __name__ == "__main__":
     app.run(debug=True)
