@@ -7,7 +7,7 @@ fecha_actual = datetime.now()
 fecha_americana = fecha_actual.strftime("%m/%d/%Y")
 
 # Definir la cantidad de días a sumar
-dias_a_sumar = 36  # Puedes cambiar este valor según tus necesidades
+dias_a_sumar = 7  # Puedes cambiar este valor según tus necesidades
 
 # Sumar la cantidad de días
 fecha_futura = fecha_actual + timedelta(days=dias_a_sumar)
